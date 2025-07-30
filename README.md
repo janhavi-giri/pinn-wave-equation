@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/YOUR-PROFILE/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/janhavigiri/)
 
 A clean, educational implementation of Physics-Informed Neural Networks (PINNs) solving the 1D wave equation. This repository demonstrates how neural networks can learn to satisfy partial differential equations (PDEs) without any training data - just physics!
 
