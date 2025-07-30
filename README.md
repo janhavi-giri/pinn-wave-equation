@@ -8,7 +8,7 @@
 A clean, educational implementation of Physics-Informed Neural Networks (PINNs) solving the 1D wave equation. This repository demonstrates how neural networks can learn to satisfy partial differential equations (PDEs) without any training data - just physics!
 
 <p align="center">
-  <img src="assets/pinn_before_after.png" alt="Before and After Training" width="800">
+  <img src="assets/pinn-before-after.svg" alt="Before and After Training" width="800">
 </p>
 
 ## 🎯 Key Results
@@ -129,20 +129,20 @@ pinn-wave-equation/
 │   └── battery_ultrasound.py      # Application example
 │
 ├── notebooks/
-│   ├── 01_introduction_to_pinns.ipynb
-│   ├── 02_wave_equation_tutorial.ipynb
-│   └── 03_advanced_techniques.ipynb
+│   ├── notebook-01-intro.ipynb
+│   ├── notebook-02-wave.ipynb
+│   └── notebook-03-advanced.ipynb
 │
 ├── tests/
-│   ├── test_model.py
-│   ├── test_losses.py
-│   └── test_physics.py
+│   ├── test-model.py
+│   ├── test-losses.py
+│   └── test-physics.py
 │
 ├── assets/
-│   ├── pinn_architecture.png
-│   ├── pinn_before_after.png
-│   └── results_dashboard.png
-│
+│   ├── pinn-architecture.svg
+│   ├── pinn-before-after.svg
+│   └── results-dashboard.svg
+│   └── generate-assets.py
 └── outputs/
     └── (generated files)
 ```
