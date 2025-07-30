@@ -123,10 +123,7 @@ pinn-wave-equation/
 │   └── visualization.py  # Plotting utilities
 │
 ├── examples/
-│   ├── simple_demo.py              # Basic example
-│   ├── advanced_training.py        # Advanced features
-│   ├── generate_visualizations.py  # Create all plots
-│   └── battery_ultrasound.py      # Application example
+│   │   ├── generate_visualizations.py  # Create all plots
 │
 ├── notebooks/
 │   ├── notebook-01-intro.ipynb
