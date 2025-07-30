@@ -215,7 +215,7 @@ loss_fn = PhysicsInformedLoss(
 ## 📈 Results
 
 <p align="center">
-  <img src="assets/results_dashboard.png" alt="Results Dashboard" width="800">
+  <img src="assets/results-dashboard-svg.svg" alt="Results Dashboard" width="800">
 </p>
 
 ### Performance Metrics
