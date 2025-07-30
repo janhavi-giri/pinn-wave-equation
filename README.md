@@ -264,11 +264,11 @@ If you use this code in your research, please cite:
 
 ```bibtex
 @software{pinn_wave_equation,
-  author = {Your Name},
+  author = {Janhavi Giri},
   title = {Physics-Informed Neural Networks for Wave Equation},
-  year = {2024},
+  year = {2025},
   publisher = {GitHub},
-  url = {https://github.com/YOUR_USERNAME/pinn-wave-equation}
+  url = {https://github.com/janhavi-giri/pinn-wave-equation}
 }
 ```
 
@@ -286,7 +286,7 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 1. Raissi, M., Perdikaris, P., & Karniadakis, G. E. (2019). Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations. *Journal of Computational Physics*, 378, 686-707.
 
-2. [NVIDIA Modulus (now PhysicsNeMo) Documentation](https://docs.nvidia.com/deeplearning/modulus/index.html)
+2. [https://docs.nvidia.com/deeplearning/physicsnemo/getting-started/index.html)
 
 ## 📄 License
 
@@ -301,11 +301,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <p align="center">
-  Made with ❤️ by <a href="https://github.com/YOUR_USERNAME">Your Name</a>
+  Made with ❤️ by <a href="https://github.com/janhavi-giri">Janhavi Giri</a>
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/YOUR-PROFILE/">LinkedIn</a> •
-  <a href="https://twitter.com/YOUR-HANDLE">Twitter</a> •
-  <a href="https://your-website.com">Website</a>
-</p>
+  <a href="https://www.linkedin.com/in/janhavigiri/">LinkedIn</a> 
+   </p>
