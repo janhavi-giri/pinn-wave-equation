@@ -11,6 +11,26 @@ A clean, educational implementation of Physics-Informed Neural Networks (PINNs) 
   <img src="assets/pinn-before-after-svg.svg" alt="Before and After Training" width="800">
 </p>
 
+<p align="center">
+  <em>Figure: PINN output before and after training for the 1D wave equation</em>
+</p>
+
+### Understanding the Visualization
+
+For the 1D wave equation with initial conditions:
+- **Initial condition**: `u(x,0) = sin(πx)`
+- **Initial velocity**: `∂u/∂t(x,0) = 0`
+- **Boundary conditions**: `u(0,t) = u(1,t) = 0`
+
+The analytical solution is: u(x,t) = sin(πx)cos(πct)
+
+**Why the straight line?** The graph on the right shows the solution at a specific time when `cos(πct) ≈ 0`. This occurs at:
+- `t = π/(2πc) = 1/(2c)`
+- `t = 3π/(2πc) = 3/(2c)`
+- And so on...
+
+At these times, `u(x,t) = sin(πx) × 0 = 0` for all x, resulting in a horizontal line at zero. This actually demonstrates that the PINN has correctly learned the physics - it knows the wave amplitude should be zero at these specific times!
+
 ## 🎯 Key Results
 
 - **<1% error** compared to analytical solution
