@@ -283,7 +283,7 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 1. Raissi, M., Perdikaris, P., & Karniadakis, G. E. (2019). Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations. *Journal of Computational Physics*, 378, 686-707.
 
-2. [https://docs.nvidia.com/deeplearning/physicsnemo/getting-started/index.html)
+2. [NVIDIA PhysicsNemo](https://docs.nvidia.com/deeplearning/physicsnemo/getting-started/index.html)
 
 ## 📄 License
 
