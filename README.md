@@ -21,16 +21,16 @@ A clean, educational implementation of Physics-Informed Neural Networks (PINNs) 
 
 ## 📚 Table of Contents
 
-- [Overview](#overview)
-- [Installation](#installation)
-- [Quick Start](#quick-start)
-- [Project Structure](#project-structure)
-- [How It Works](#how-it-works)
-- [Examples](#examples)
-- [Results](#results)
-- [Applications](#applications)
-- [Citation](#citation)
-- [License](#license)
+- [🌟 Overview](#-overview)
+- [🚀 Installation](#-installation)
+- [⚡ Quick Start](#-quick-start)
+- [📁 Project Structure](#-project-structure)
+- [🧠 How It Works](#-how-it-works)
+- [📊 Examples](#-examples)
+- [📈 Results](#-results)
+- [🔧 Applications](#-applications)
+- [📖 Citation](#-citation)
+- [📄 License](#-license)
 
 ## 🌟 Overview
 
