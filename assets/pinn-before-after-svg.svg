@@ -1,0 +1,135 @@
+<svg viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="600" fill="white"/>
+  
+  <!-- Main Title -->
+  <text x="600" y="40" font-size="20" font-weight="bold" text-anchor="middle" font-family="Arial">
+    Physics-Informed Neural Networks: Impact of Training
+  </text>
+  
+  <!-- Left Panel - Before Training -->
+  <g transform="translate(50, 80)">
+    <!-- Panel background -->
+    <rect x="0" y="0" width="500" height="450" fill="#f9f9f9" stroke="black" stroke-width="1"/>
+    
+    <!-- Title -->
+    <text x="250" y="30" font-size="16" font-weight="bold" text-anchor="middle" font-family="Arial">
+      Before Training: Random Output
+    </text>
+    
+    <!-- Axes -->
+    <line x1="50" y1="400" x2="450" y2="400" stroke="black" stroke-width="2"/>
+    <line x1="50" y1="100" x2="50" y2="400" stroke="black" stroke-width="2"/>
+    
+    <!-- Grid lines -->
+    <g stroke="#ddd" stroke-width="0.5">
+      <line x1="50" y1="150" x2="450" y2="150"/>
+      <line x1="50" y1="200" x2="450" y2="200"/>
+      <line x1="50" y1="250" x2="450" y2="250"/>
+      <line x1="50" y1="300" x2="450" y2="300"/>
+      <line x1="50" y1="350" x2="450" y2="350"/>
+      
+      <line x1="150" y1="100" x2="150" y2="400"/>
+      <line x1="250" y1="100" x2="250" y2="400"/>
+      <line x1="350" y1="100" x2="350" y2="400"/>
+    </g>
+    
+    <!-- True solution (y=0 at t=0.5) -->
+    <line x1="50" y1="250" x2="450" y2="250" stroke="black" stroke-width="2" stroke-dasharray="5,5"/>
+    
+    <!-- Random untrained output -->
+    <path d="M 50 220 L 80 280 L 110 190 L 140 270 L 170 210 L 200 290 L 230 180 L 260 260 L 290 200 L 320 275 L 350 195 L 380 265 L 410 215 L 450 285" 
+          stroke="red" stroke-width="3" fill="none"/>
+    
+    <!-- Labels -->
+    <text x="250" y="440" font-size="14" text-anchor="middle" font-family="Arial">Position x</text>
+    <text x="20" y="255" font-size="14" text-anchor="middle" font-family="Arial" transform="rotate(-90 20 255)">Wave Amplitude u(x,t)</text>
+    
+    <!-- Axis ticks and labels -->
+    <text x="50" y="420" font-size="12" text-anchor="middle" font-family="Arial">0</text>
+    <text x="250" y="420" font-size="12" text-anchor="middle" font-family="Arial">0.5</text>
+    <text x="450" y="420" font-size="12" text-anchor="middle" font-family="Arial">1</text>
+    
+    <text x="35" y="105" font-size="12" text-anchor="middle" font-family="Arial">1.5</text>
+    <text x="35" y="255" font-size="12" text-anchor="middle" font-family="Arial">0</text>
+    <text x="35" y="405" font-size="12" text-anchor="middle" font-family="Arial">-1.5</text>
+    
+    <!-- Legend -->
+    <g transform="translate(320, 120)">
+      <rect x="0" y="0" width="120" height="50" fill="white" stroke="black" stroke-width="1"/>
+      <line x1="10" y1="15" x2="30" y2="15" stroke="red" stroke-width="3"/>
+      <text x="35" y="20" font-size="12" font-family="Arial">Untrained PINN</text>
+      <line x1="10" y1="35" x2="30" y2="35" stroke="black" stroke-width="2" stroke-dasharray="5,5"/>
+      <text x="35" y="40" font-size="12" font-family="Arial">True Solution</text>
+    </g>
+    
+    <!-- Annotation box -->
+    <g transform="translate(150, 60)">
+      <rect x="0" y="0" width="200" height="30" rx="5" fill="#ffcccc" stroke="black" stroke-width="1"/>
+      <text x="100" y="20" font-size="12" text-anchor="middle" font-family="Arial">❌ Network outputs random values</text>
+    </g>
+  </g>
+  
+  <!-- Right Panel - After Training -->
+  <g transform="translate(650, 80)">
+    <!-- Panel background -->
+    <rect x="0" y="0" width="500" height="450" fill="#f9f9f9" stroke="black" stroke-width="1"/>
+    
+    <!-- Title -->
+    <text x="250" y="30" font-size="16" font-weight="bold" text-anchor="middle" font-family="Arial">
+      After Training: Physics Learned!
+    </text>
+    
+    <!-- Axes -->
+    <line x1="50" y1="400" x2="450" y2="400" stroke="black" stroke-width="2"/>
+    <line x1="50" y1="100" x2="50" y2="400" stroke="black" stroke-width="2"/>
+    
+    <!-- Grid lines -->
+    <g stroke="#ddd" stroke-width="0.5">
+      <line x1="50" y1="150" x2="450" y2="150"/>
+      <line x1="50" y1="200" x2="450" y2="200"/>
+      <line x1="50" y1="250" x2="450" y2="250"/>
+      <line x1="50" y1="300" x2="450" y2="300"/>
+      <line x1="50" y1="350" x2="450" y2="350"/>
+      
+      <line x1="150" y1="100" x2="150" y2="400"/>
+      <line x1="250" y1="100" x2="250" y2="400"/>
+      <line x1="350" y1="100" x2="350" y2="400"/>
+    </g>
+    
+    <!-- True solution (y=0 at t=0.5) -->
+    <line x1="50" y1="250" x2="450" y2="250" stroke="black" stroke-width="2" stroke-dasharray="5,5"/>
+    
+    <!-- Trained output (very close to true solution with tiny noise) -->
+    <path d="M 50 251 L 80 249 L 110 251 L 140 250 L 170 249 L 200 251 L 230 250 L 260 249 L 290 251 L 320 250 L 350 249 L 380 251 L 410 250 L 450 249" 
+          stroke="green" stroke-width="3" fill="none"/>
+    
+    <!-- Labels -->
+    <text x="250" y="440" font-size="14" text-anchor="middle" font-family="Arial">Position x</text>
+    <text x="20" y="255" font-size="14" text-anchor="middle" font-family="Arial" transform="rotate(-90 20 255)">Wave Amplitude u(x,t)</text>
+    
+    <!-- Axis ticks and labels -->
+    <text x="50" y="420" font-size="12" text-anchor="middle" font-family="Arial">0</text>
+    <text x="250" y="420" font-size="12" text-anchor="middle" font-family="Arial">0.5</text>
+    <text x="450" y="420" font-size="12" text-anchor="middle" font-family="Arial">1</text>
+    
+    <text x="35" y="105" font-size="12" text-anchor="middle" font-family="Arial">1.5</text>
+    <text x="35" y="255" font-size="12" text-anchor="middle" font-family="Arial">0</text>
+    <text x="35" y="405" font-size="12" text-anchor="middle" font-family="Arial">-1.5</text>
+    
+    <!-- Legend -->
+    <g transform="translate(320, 120)">
+      <rect x="0" y="0" width="120" height="50" fill="white" stroke="black" stroke-width="1"/>
+      <line x1="10" y1="15" x2="30" y2="15" stroke="green" stroke-width="3"/>
+      <text x="35" y="20" font-size="12" font-family="Arial">Trained PINN</text>
+      <line x1="10" y1="35" x2="30" y2="35" stroke="black" stroke-width="2" stroke-dasharray="5,5"/>
+      <text x="35" y="40" font-size="12" font-family="Arial">True Solution</text>
+    </g>
+    
+    <!-- Annotation box -->
+    <g transform="translate(150, 60)">
+      <rect x="0" y="0" width="200" height="30" rx="5" fill="#ccffcc" stroke="black" stroke-width="1"/>
+      <text x="100" y="20" font-size="12" text-anchor="middle" font-family="Arial">✓ Network learned wave physics!</text>
+    </g>
+  </g>
+</svg>

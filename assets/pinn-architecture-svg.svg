@@ -1,0 +1,146 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="white"/>
+  
+  <!-- Title -->
+  <text x="600" y="50" font-size="24" font-weight="bold" text-anchor="middle" font-family="Arial">
+    Physics-Informed Neural Network Architecture
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="90" font-size="18" font-style="italic" text-anchor="middle" font-family="Arial">
+    Wave Equation: ∂²u/∂t² = c²∂²u/∂x²
+  </text>
+  
+  <!-- Network Layers -->
+  <!-- Input Layer -->
+  <g transform="translate(150, 300)">
+    <rect x="-60" y="-80" width="120" height="160" rx="10" fill="#ffcccc" stroke="black" stroke-width="2"/>
+    <text x="0" y="-20" font-size="14" font-weight="bold" text-anchor="middle" font-family="Arial">Input</text>
+    <text x="0" y="10" font-size="14" text-anchor="middle" font-family="Arial">(x, t)</text>
+    <!-- Input nodes -->
+    <circle cx="0" cy="-40" r="8" fill="#ff6666" stroke="black"/>
+    <circle cx="0" cy="40" r="8" fill="#ff6666" stroke="black"/>
+  </g>
+  
+  <!-- Hidden Layer 1 -->
+  <g transform="translate(350, 300)">
+    <rect x="-60" y="-120" width="120" height="240" rx="10" fill="#ccddff" stroke="black" stroke-width="2"/>
+    <text x="0" y="-80" font-size="14" font-weight="bold" text-anchor="middle" font-family="Arial">Hidden</text>
+    <text x="0" y="-60" font-size="14" text-anchor="middle" font-family="Arial">64</text>
+    <!-- Sample nodes -->
+    <circle cx="0" cy="-40" r="6" fill="#6699ff" stroke="black"/>
+    <circle cx="0" cy="-10" r="6" fill="#6699ff" stroke="black"/>
+    <circle cx="0" cy="20" r="6" fill="#6699ff" stroke="black"/>
+    <circle cx="0" cy="50" r="6" fill="#6699ff" stroke="black"/>
+    <text x="0" y="90" font-size="12" text-anchor="middle" font-family="Arial">...</text>
+  </g>
+  
+  <!-- Hidden Layer 2 -->
+  <g transform="translate(550, 300)">
+    <rect x="-60" y="-120" width="120" height="240" rx="10" fill="#ccddff" stroke="black" stroke-width="2"/>
+    <text x="0" y="-80" font-size="14" font-weight="bold" text-anchor="middle" font-family="Arial">Hidden</text>
+    <text x="0" y="-60" font-size="14" text-anchor="middle" font-family="Arial">64</text>
+    <!-- Sample nodes -->
+    <circle cx="0" cy="-40" r="6" fill="#6699ff" stroke="black"/>
+    <circle cx="0" cy="-10" r="6" fill="#6699ff" stroke="black"/>
+    <circle cx="0" cy="20" r="6" fill="#6699ff" stroke="black"/>
+    <circle cx="0" cy="50" r="6" fill="#6699ff" stroke="black"/>
+    <text x="0" y="90" font-size="12" text-anchor="middle" font-family="Arial">...</text>
+  </g>
+  
+  <!-- Hidden Layer 3 -->
+  <g transform="translate(750, 300)">
+    <rect x="-60" y="-120" width="120" height="240" rx="10" fill="#ccddff" stroke="black" stroke-width="2"/>
+    <text x="0" y="-80" font-size="14" font-weight="bold" text-anchor="middle" font-family="Arial">Hidden</text>
+    <text x="0" y="-60" font-size="14" text-anchor="middle" font-family="Arial">64</text>
+    <!-- Sample nodes -->
+    <circle cx="0" cy="-40" r="6" fill="#6699ff" stroke="black"/>
+    <circle cx="0" cy="-10" r="6" fill="#6699ff" stroke="black"/>
+    <circle cx="0" cy="20" r="6" fill="#6699ff" stroke="black"/>
+    <circle cx="0" cy="50" r="6" fill="#6699ff" stroke="black"/>
+    <text x="0" y="90" font-size="12" text-anchor="middle" font-family="Arial">...</text>
+  </g>
+  
+  <!-- Hidden Layer 4 -->
+  <g transform="translate(950, 300)">
+    <rect x="-60" y="-120" width="120" height="240" rx="10" fill="#ccddff" stroke="black" stroke-width="2"/>
+    <text x="0" y="-80" font-size="14" font-weight="bold" text-anchor="middle" font-family="Arial">Hidden</text>
+    <text x="0" y="-60" font-size="14" text-anchor="middle" font-family="Arial">64</text>
+    <!-- Sample nodes -->
+    <circle cx="0" cy="-40" r="6" fill="#6699ff" stroke="black"/>
+    <circle cx="0" cy="-10" r="6" fill="#6699ff" stroke="black"/>
+    <circle cx="0" cy="20" r="6" fill="#6699ff" stroke="black"/>
+    <circle cx="0" cy="50" r="6" fill="#6699ff" stroke="black"/>
+    <text x="0" y="90" font-size="12" text-anchor="middle" font-family="Arial">...</text>
+  </g>
+  
+  <!-- Output Layer -->
+  <g transform="translate(1150, 300)">
+    <rect x="-60" y="-60" width="120" height="120" rx="10" fill="#ccffcc" stroke="black" stroke-width="2"/>
+    <text x="0" y="-20" font-size="14" font-weight="bold" text-anchor="middle" font-family="Arial">Output</text>
+    <text x="0" y="10" font-size="14" text-anchor="middle" font-family="Arial">u(x,t)</text>
+    <circle cx="0" cy="35" r="8" fill="#66ff66" stroke="black"/>
+  </g>
+  
+  <!-- Connections (simplified) -->
+  <!-- Input to Hidden 1 -->
+  <path d="M 210 260 L 290 260" stroke="gray" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 210 340 L 290 340" stroke="gray" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Hidden 1 to Hidden 2 -->
+  <path d="M 410 260 L 490 260" stroke="gray" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 410 300 L 490 300" stroke="gray" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 410 340 L 490 340" stroke="gray" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Hidden 2 to Hidden 3 -->
+  <path d="M 610 260 L 690 260" stroke="gray" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 610 300 L 690 300" stroke="gray" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 610 340 L 690 340" stroke="gray" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Hidden 3 to Hidden 4 -->
+  <path d="M 810 260 L 890 260" stroke="gray" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 810 300 L 890 300" stroke="gray" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 810 340 L 890 340" stroke="gray" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Hidden 4 to Output -->
+  <path d="M 1010 280 L 1090 300" stroke="gray" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 1010 320 L 1090 300" stroke="gray" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="gray"/>
+    </marker>
+  </defs>
+  
+  <!-- Automatic Differentiation annotation -->
+  <g transform="translate(700, 500)">
+    <rect x="-100" y="-25" width="200" height="50" rx="10" fill="white" stroke="red" stroke-width="2"/>
+    <text x="0" y="-5" font-size="14" text-anchor="middle" font-family="Arial" fill="red">Automatic</text>
+    <text x="0" y="15" font-size="14" text-anchor="middle" font-family="Arial" fill="red">Differentiation</text>
+  </g>
+  
+  <!-- Arrow pointing to middle of network -->
+  <path d="M 600 450 L 600 420" stroke="red" stroke-width="2" marker-end="url(#arrowhead-red)"/>
+  
+  <!-- Red arrow marker -->
+  <defs>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="red"/>
+    </marker>
+  </defs>
+  
+  <!-- Loss function box -->
+  <g transform="translate(600, 650)">
+    <rect x="-350" y="-30" width="700" height="60" rx="10" fill="#ffff99" stroke="black" stroke-width="2"/>
+    <text x="0" y="8" font-size="16" text-anchor="middle" font-family="Arial">
+      Loss = λ₁||PDE Residual||² + λ₂||Initial Condition||² + λ₃||Boundary Condition||²
+    </text>
+  </g>
+  
+  <!-- Activation function notation -->
+  <text x="600" y="150" font-size="14" text-anchor="middle" font-family="Arial" fill="#666">
+    Activation: Tanh | Parameters: ~20,000
+  </text>
+</svg>
