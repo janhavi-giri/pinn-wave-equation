@@ -1,0 +1,94 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+outputs/
+results/
+checkpoints/
+*.pth
+*.pt
+*.pkl
+*.log
+*.txt
+
+# Except requirements.txt
+!requirements.txt
+
+# Data files
+data/
+*.csv
+*.npy
+*.npz
+
+# Plots (except in assets)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+!assets/*.png
+!assets/*.jpg
+
+# Documentation build
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# Misc
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
