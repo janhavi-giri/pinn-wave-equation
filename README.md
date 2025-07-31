@@ -80,7 +80,7 @@ With:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/YOUR_USERNAME/pinn-wave-equation.git
+git clone https://github.com/janhavi-giri/pinn-wave-equation.git
 cd pinn-wave-equation
 ```
 
